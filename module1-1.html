@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>MDM4U</title>
+<title>MDM4U - Types de données et graphiques</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
@@ -39,56 +40,92 @@ $(function(){
 </div>
 
 <header class="w3-container w3-theme" style="padding:64px 32px">
-  <h1 class="w3-xxxlarge">1.1 - Représentation des données</h1>
+  <h1 class="w3-xxxlarge">Module 1 : Analyse de données</h1>
 </header>
 
 <div class="w3-container" style="padding:32px">
 
-<!-- Tu peux complètement modifier le contenu ci-dessous -->
-
 <h1>Les différents types de données</h1>
+
 <h3>Variable Quantitative (continue et discrète)</h3>
-<p>voici ma définition...</p>
+<p>
+  Une <strong>variable quantitative</strong> représente une quantité mesurable ou comptable. Ses valeurs sont exprimées sous forme de nombres avec lesquels on peut faire des calculs mathématiques (comme des moyennes).
+</p>
+<ul>
+  <li>
+    <strong>Variable discrète :</strong> Elle prend des valeurs isolées, généralement des nombres entiers, obtenues en comptant. On ne peut pas avoir de fractions de valeurs entre deux points.
+    <br><em>Exemples :</em> Le nombre d'élèves dans une classe, le nombre de pièces dans une maison ou le score obtenu à un jeu de dés.
+  </li>
+  <li>
+    <strong>Variable continue :</strong> Elle peut prendre n'importe quelle valeur dans un intervalle donné, car elle provient d'une mesure. Entre deux valeurs, il existe toujours une infinité de valeurs possibles.
+    <br><em>Exemples :</em> La taille d'une personne (ex. 1,75 m), le temps requis pour courir 100 mètres ou la température extérieure.
+  </li>
+</ul>
 
 <h3>Variable Qualitative (nominale et ordinale)</h3>
-<p>Ici, tu vas définir une variable qualitative en plus d'expliquer et donner des exemples de variables qualitatives nominales et ordinales.</p>
+<p>
+  Une <strong>variable qualitative</strong> (aussi appelée catégorielle) décrit une qualité, une caractéristique ou une étiquette non numérique. Elle sert à classer les données dans des catégories distinctes.
+</p>
+<ul>
+  <li>
+    <strong>Variable nominale :</strong> Les catégories n'ont aucun ordre logique ou hiérarchique naturel entre elles.
+    <br><em>Exemples :</em> La couleur des yeux (bleu, vert, brun), la marque d'un téléphone portable ou le groupe sanguin (A, B, AB, O).
+  </li>
+  <li>
+    <strong>Variable ordinale :</strong> Les catégories possèdent un ordre logique, une hiérarchie ou un classement clair, bien qu'on ne puisse pas mesurer précisément la différence numérique entre chaque rang.
+    <br><em>Exemples :</em> Le niveau de satisfaction (très satisfait, satisfait, insatisfait), la mention obtenue à un examen ou le niveau d'études (secondaire, collégial, universitaire).
+  </li>
+</ul>
 
 
 <h1>Certains types de diagrammes</h1>
-<h3>Diagramme à bandes </h3>
-<p>Ici, tu vas donner un explication de ce type de diagramme.  Dans quel(s) contexte(s) on l'utiliserait? </p>
+
+<h3>Diagramme à bandes</h3>
+<p>
+  <strong>Explication :</strong> Ce diagramme utilise des barres rectangulaires séparées par des espaces. La longueur ou la hauteur de chaque bande est proportionnelle à la fréquence ou au pourcentage de la catégorie représentée.
+  <br><strong>Contexte d'utilisation :</strong> On l'utilise idéalement pour comparer des données qualitatives (nominales ou ordinales) ou des données quantitatives discrètes comprenant peu de valeurs distinctes.
+</p>
+
 <h3>Histogramme</h3>
-<p>Ici, tu vas donner un explication de ce type de diagramme.  Dans quel(s) contexte(s) on l'utiliserait? </p>
+<p>
+  <strong>Explication :</strong> Visuellement proche du diagramme à bandes, l'histogramme présente des barres contiguës (collement sans espace entre elles). L'axe horizontal représente des intervalles de valeurs numériques (des classes).
+  <br><strong>Contexte d'utilisation :</strong> On l'utilise exclusivement pour afficher la distribution de données quantitatives continues regroupées en classes de valeurs. L'absence d'espace montre la continuité des données.
+</p>
+
 <h3>Diagramme circulaire</h3>
-<p>Ici, tu vas donner un explication de ce type de diagramme.  Dans quel(s) contexte(s) on l'utiliserait? </p>
+<p>
+  <strong>Explication :</strong> Souvent appelé « camembert », ce diagramme divise un cercle en plusieurs portions. L'angle et la surface de chaque secteur sont proportionnels au pourcentage que représente chaque catégorie par rapport au total (100 %).
+  <br><strong>Contexte d'utilisation :</strong> On l'utilise pour montrer la répartition relative de catégories (variables qualitatives) lorsqu'on veut comparer une partie par rapport au tout. Il est plus efficace lorsqu'il y a peu de catégories (idéalement moins de 6).
+</p>
+
 <h3>Diagramme à ligne brisée</h3>
-<p>Ici, tu vas donner un explication de ce type de diagramme.  Dans quel(s) contexte(s) on l'utiliserait? </p>
+<p>
+  <strong>Explication :</strong> Ce graphique relie des points de données par des segments de droite pour montrer une évolution. L'axe des X représente presque toujours une unité temporelle.
+  <br><strong>Contexte d'utilisation :</strong> On l'utilise principalement pour observer l'évolution d'une variable quantitative dans le temps (séries chronologiques), comme l'évolution des températures au fil des mois ou le prix d'une action en bourse.
+</p>
 
 
 <h1>Exemples de graphiques créés avec Google Sheets</h1>
+
 <h3>Diagramme à bandes</h3>
-<p>Tu vas remplacer ce paragraphe par le code iframe d'un graphique créé avec Google Sheets.  Les données proviendront des résultats du sondage fait en classe.  </p>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=1678018245&amp;format=interactive"></iframe>
+
 <h3>Histogramme</h3>
-<p>Tu vas remplacer ce paragraphe par le code iframe d'un graphique créé avec Google Sheets.  Les données proviendront des résultats du sondage fait en classe.  </p>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=1180578451&amp;format=interactive"></iframe>
+
 <h3>Diagramme circulaire</h3>
-<p>Tu vas remplacer ce paragraphe par le code iframe d'un graphique créé avec Google Sheets.  Les données proviendront des résultats du sondage fait en classe.  </p>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=864085522&amp;format=interactive"></iframe>
 
 
-<p>Tu vas supprimer ce paragraphe et remplacer les deux lignes de codes ci-dessous avec le code de ton probre fichier MyBib pour le 1.1 </p>
-
-
-<a href="https://www.mybib.com/b/y9P9b2">View Bibliography</a>
+<a href="https://www.mybib.com/b/y9P9b2">Voir la bibliographie</a>
 <script src="https://www.mybib.com/e/script" bibliography="y9P9b2"></script>
-
-
-<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
 
 </div>
 
 <footer class="w3-container w3-theme" style="padding:32px">
   <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
 </footer>
-     
+
 </div>
 
 <script>
@@ -114,8 +151,7 @@ function myFunction() {
     document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
   }
 }
-
 </script>
-     
+
 </body>
-</html> 
+</html>
