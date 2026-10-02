@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-<title>MDM4U - Types de données et graphiques</title>
 <meta charset="UTF-8">
+<title>MDM4U</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
@@ -40,92 +40,46 @@ $(function(){
 </div>
 
 <header class="w3-container w3-theme" style="padding:64px 32px">
-  <h1 class="w3-xxxlarge">1.1 Types de données et graphiques</h1>
+  <h1 class="w3-xxxlarge"> 2.1 Les distributions des données</h1>
 </header>
 
 <div class="w3-container" style="padding:32px">
 
-<h1>Les différents types de données</h1>
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+<h1>Les distributions des données</h1>
 
-<h3>Variable Quantitative (continue et discrète)</h3>
+<h3>La distribution en U</h3>
 <p>
-  Une <strong>variable quantitative</strong> représente une quantité mesurable ou comptable. Ses valeurs sont exprimées sous forme de nombres avec lesquels on peut faire des calculs mathématiques (comme des moyennes).
-</p>
-<ul>
-  <li>
-    <strong>Variable discrète :</strong> Elle prend des valeurs isolées, généralement des nombres entiers, obtenues en comptant. On ne peut pas avoir de fractions de valeurs entre deux points.
-    <br><em>Exemples :</em> Le nombre d'élèves dans une classe, le score obtonue sur un jeu de cartes ou le score obtenu à un jeu de dés.
-  </li>
-  <li>
-    <strong>Variable continue :</strong> Elle peut prendre n'importe quelle valeur dans un intervalle donné, c'est une mesure. Entre deux valeurs, il existe toujours une infinité de valeurs possibles.
-    <br><em>Exemples :</em> La taille d'une personne, ton heure de sommeil ou la température extérieure.
-  </li>
-</ul>
-
-<h3>Variable Qualitative (nominale et ordinale)</h3>
-<p>
-  Une <strong>variable qualitative</strong> Elle décrit une qualité, une caractéristique et autre chose non combtable. Elle sert à classer les données dans des catégories distinctes.
-</p>
-<ul>
-  <li>
-    <strong>Variable nominale :</strong> Les catégories n'ont aucun ordre logique.
-    <br><em>Exemples :</em> La couleur des yeux (bleu, vert, brun), la marque d'un téléphone portable ou le groupe sanguin (A, B, AB, O).
-  </li>
-  <li>
-    <strong>Variable ordinale :</strong> Les catégories possèdent un ordre logique.
-    <br><em>Exemples :</em> Le niveau de satisfaction (très satisfait, satisfait, insatisfait), la mention obtenue à un examen ou le niveau d'études (secondaire, collégial, universitaire).
-  </li>
-</ul>
-
-
-<h1>Certains types de diagrammes</h1>
-
-<h3>Diagramme à bandes</h3>
-<p>
-  <strong>Explication :</strong> Ce diagramme utilise des barres séparées par des espaces. La longueur ou la hauteur de chaque bande est proportionnelle à la fréquence ou au pourcentage de la catégorie représentée.
-  <br><strong>Contexte d'utilisation :</strong> On l'utilise idéalement pour comparer des données qualitatives ou des données quantitatives discrètes comprenant peu de valeurs distinctes.
+  Les participants <strong>choisissent eux-mêmes</strong> de faire partie de l'échantillon. Ce type d'échantillon est souvent biaisé, car il attire surtout des gens ayant une opinion forte.
+  <br><em>Exemple :</em> Un sondage en ligne où n'importe qui peut voter sur un sujet.
 </p>
 
-<h3>Histogramme</h3>
+<h3>La distribution uniforme</h3>
 <p>
-  <strong>Explication :</strong> Simillaire au diagramme à bandes, l'histogramme présente des barres coller sans espace entre elles. L'axe horizontal représente des intervalles de valeurs numériques (des classes).
-  <br><strong>Contexte d'utilisation :</strong> On l'utilise exclusivement pour afficher la distribution de données quantitatives continues regroupées en classes de valeurs. L'absence d'espace montre la continuité des données.
+  Chaque membre de la population a une <strong>chance égale</strong> d'être choisi au hasard.
+  <br><em>Exemple :</em> Piger 5 noms au hasard dans un chapeau contenant les noms de tous les élèves d'une classe.
 </p>
 
-<h3>Diagramme circulaire</h3>
+<h3>La distribution en cloche</h3>
 <p>
-  <strong>Explication :</strong> Ce diagramme divise un cercle en plusieurs portions. L'angle et la surface de chaque secteur sont proportionnels au pourcentage que représente chaque catégorie par rapport au total (100 %).
-  <br><strong>Contexte d'utilisation :</strong> On l'utilise pour montrer la répartition relative de catégories (variables qualitatives) lorsqu'on veut comparer une partie par rapport au tout. Il est plus efficace lorsqu'il y a peu de catégories (idéalement moins de 6).
+  La population est divisée en <strong>sous-groupes</strong> selon une caractéristique commune (âge, niveau, etc.), puis dans les sous-groupes il y un échantillon aléatoire dans chaque groupes
+  <br><em>Exemple :</em> Choisir au hasard 10 % des élèves de chaque niveau scolaire (9e, 10e, 11e, 12e).
 </p>
 
-<h3>Diagramme à ligne brisée</h3>
+<h3>Les distributions asymétriques</h3>
 <p>
-  <strong>Explication :</strong> Ce graphique relie des points de données par des segments de droite pour montrer une évolution. L'axe des X représente presque toujours une unité temporelle.
-  <br><strong>Contexte d'utilisation :</strong> On l'utilise principalement pour observer l'évolution d'une variable quantitative dans le temps (séries chronologiques), comme l'évolution des températures au fil des mois ou le prix d'une action en bourse.
+  La population est divisée en <strong>groupes (grappes)</strong>,puis quelques grappes entières sont choisies au hasard.
+  <br><em>Exemple :</em> Choisir 4 écoles au hasard parmi 40, puis interroger tous les élèves de ces écoles.
 </p>
 
-
-<h1>Exemples de graphiques créés avec Google Sheets</h1>
-
-<h3>Diagramme à bandes</h3>
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=1678018245&amp;format=interactive"></iframe>
-
-<h3>Histogramme</h3>
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=1180578451&amp;format=interactive"></iframe>
-
-<h3>Diagramme circulaire</h3>
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRH2hch5ZtkZNzD10a3GShjtCRJafoAfdI706sL3LFCzYDcVxMpUeXte2FsroY2LW4rlmApD_lw95SP/pubchart?oid=864085522&amp;format=interactive"></iframe>
-
-
-<a href="https://www.mybib.com/b/y9P9b2">Voir la bibliographie</a>
-<script src="https://www.mybib.com/#/projects/utxoY0/citations" bibliography="y9P9b2"></script>
+<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
 
 </div>
 
 <footer class="w3-container w3-theme" style="padding:32px">
   <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
 </footer>
-
+     
 </div>
 
 <script>
@@ -151,7 +105,8 @@ function myFunction() {
     document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
   }
 }
-</script>
 
+</script>
+     
 </body>
-</html>
+</html> 
