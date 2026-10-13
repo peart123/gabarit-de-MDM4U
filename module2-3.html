@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MDM4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
 
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge"> 2.3 Les mesures de dispersion</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+<h1>Les méthodes de mesure de dispersion</h1>
+
+<h3>L'étendue</h3>
+<p>
+  L'étendue est la différence entre la valeur maximale et la valeur minimale d'une série statistique.
+</p>
+
+<h3>Les Quartiles</h3>
+<p>
+Les quartiles sont des valeurs qui partagent une série statistique ordonnée en quatre parties égales, représentant chacune 25 % des données.
+</p>
+
+<h3>L'écart interquartile</h3>
+<p>
+ L'écart interquartile est l'étendue de la moitié centrale des données. Il mesure la dispersion des 50 % des valeurs situées au milieu de la série.
+</p>
+
+<h3>L'écart type</h3>
+<p>
+L'écart type est la mesure de dispersion la plus utilisée en statistiques. Il indique l'éloignement moyen des données par rapport à leur moyenne.
+</p>
+
+<h3>Comment calculer l'écart type?</h3>
+<p>
+  
+</p>
+
+
+<h1>Exercices</h1>
+<p><a href="https://docs.google.com/document/d/1j2rI4zAJ-gDnsIGCT9XzLetjL0eWD_eD/edit?usp=sharing&ouid=118279040261228076473&rtpof=true&sd=true"_blank">Exercices 2.3 - Les mesures de dispersion</a>
+
+<p style="text-align: center;">
+  <a href="https://docs.google.com/document/d/1F86KFz9EoqFrPQtalKK6AyGwhLiuNGwA9vDiWRFKjnw/edit?usp=sharing">Voir la bibliographie</a>
+</p>
+
+<script src="https://docs.google.com/document/d/1F86KFz9EoqFrPQtalKK6AyGwhLiuNGwA9vDiWRFKjnw/edit?usp=sharing" bibliography="y9P9b2"></script>
+
+<script src="https://docs.google.com/document/d/1F86KFz9EoqFrPQtalKK6AyGwhLiuNGwA9vDiWRFKjnw/edit?usp=sharing" bibliography="y9P9b2"></script>
+<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+</script>
+     
+</body>
+</html> 
