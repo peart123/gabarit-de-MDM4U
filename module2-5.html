@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MDM4U - Module 2.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+.graph-container {
+  margin-bottom: 40px;
+  padding: 16px;
+}
+iframe {
+  max-width: 100%;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">2.5 Analyse de corrélation</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Graphique 1 -->
+<div class="w3-card w3-white graph-container">
+  <h2>Graphique 1 : Quantité d'essence en fonction du prix</h2>
+  <div class="w3-center w3-padding-16">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQvyoGXonsJ8QXkcIiy35Oy4H41c2XWe0VzXZxwFZt4dzyQQ2wf7oJsIgLW9TTX_hkGj8GvHslVEm23/pubchart?oid=334874297&amp;format=interactive"></iframe>
+  </div>
+  <p>Coefficient de corrélation : r = -0.8988388972</p>
+  <p>Il existe une corrélation négative forte entre le prix de l’essence et la quantité vendue. Quand le prix augmente, la quantité d’essence vendue diminue</p>
+</div>
+
+<!-- Graphique 2 -->
+<div class="w3-card w3-white graph-container">
+  <h2>Graphique 2 : Poids en fonction de la taille</h2>
+  <div class="w3-center w3-padding-16">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQvyoGXonsJ8QXkcIiy35Oy4H41c2XWe0VzXZxwFZt4dzyQQ2wf7oJsIgLW9TTX_hkGj8GvHslVEm23/pubchart?oid=1299805321&amp;format=interactive"></iframe>
+  </div>
+  <p>Coefficient de corrélation : r ≈ 0.405</p>
+  <p>Le coefficient de corrélation est r ≈ 0.405. Il existe donc pas vraiment de corrélation entre la taille et le poids. Le graphique signifie que les personnes de taille plus élevée sont généralement plus lourdes, mais la relation n’est pas très forte.</p>
+</div>
+
+<!-- Graphique 3 -->
+<div class="w3-card w3-white graph-container">
+  <h2>Graphique 3 : Points marqués en fonction de minutes de jeu</h2>
+  <div class="w3-center w3-padding-16">
+    <iframe src="https://www.desmos.com/calculator/ywdqt3gzmi?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+  </div>
+  <p>Droite d'ajustement : y ≈ 0.279x + 3.416</p>
+  <p>Coefficient de corrélation : r ≈ 0.908</p>
+  <p>La droite la mieux ajustée est y ≈ 0.279x + 3.416. Le coefficient de corrélation est r ≈ 0.908. La corrélation est donc positive forte entre les minutes de jeu et les points marqués. En général, le plus de minutes par jeu que tu jour le plus le nombre de points marqués augmente.</p>
+</div>
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
+</footer>
+      
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+</script>
+      
+</body>
+</html>
